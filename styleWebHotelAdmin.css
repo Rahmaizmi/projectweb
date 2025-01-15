@@ -1,0 +1,286 @@
+.header {
+  position: fixed; /* Tetap di atas layar */
+  top: 0; /* Mulai dari bagian paling atas */
+  left: 0; /* Melebar dari sisi kiri */
+  width: 100%; /* Memenuhi lebar layar */
+  z-index: 1000; /* Prioritas di atas elemen lain */
+  background-color: black; /* Warna latar untuk menutupi elemen di bawah */
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.header .logo img {
+  height: 150px;
+}
+h1 {
+  font-size: 28px;
+  color: white;
+  margin: 0;
+}
+.custom-navbar {
+  position: fixed; /* Tetap di atas layar */
+  top: 100px; /* Geser ke bawah agar tidak menutupi header */
+  left: 0;
+  width: 100%; /* Memenuhi lebar layar */
+  z-index: 999; /* Prioritas di bawah header */
+  background-color: goldenrod; /* Warna latar untuk menutupi elemen di bawah */
+  padding-top: 25px;
+}
+
+.KelolaKamar h3 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.KelolaKamar .btn-wrapper {
+  text-align: right; /* Mengatur tombol di sisi kanan */
+  padding: 10px 20px; /* Memberi jarak dari tepi halaman */
+}
+
+.KelolaKamar .btn-tambah {
+  background-color: black;
+  color: white;
+  padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+  text-decoration: none; /* Menghilangkan underline */
+  border-radius: 5px; /* Memberikan efek sudut membulat */
+  display: inline-block; /* Mencegah tombol memanjang */
+}
+
+.KelolaKamar .btn-tambah:hover {
+  background-color: #333; /* Warna hover */
+  color: white;
+}
+
+.KelolaKamar .btn-edit {
+  margin-top: 10px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+}
+
+.KelolaKamar .btn-edit:hover {
+  background-color: #ffcc00; /* Warna saat hover */
+  color: white;
+}
+
+/* Tombol Hitam */
+.KelolaKamar .btn-delete {
+  margin-top: 10px;
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+
+.KelolaKamar .btn-delete:hover {
+  background-color: red; /* Warna saat hover */
+  color: white;
+}
+
+/* Menyusun konten secara tengah */
+.KelolaKamar .card-body {
+  text-align: center;
+}
+
+.KelolaKamar .card-title {
+  margin-bottom: 15px; /* Menambahkan jarak antara title dan tombol */
+  text-align: center;
+}
+.KelolaKamar .card {
+  box-shadow: 0 0 10px 5px black;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.KelolaKamar .card img {
+  width: 100%;
+  height: 200px; /* Tetapkan tinggi gambar */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0; /* Membulatkan hanya bagian atas */
+}
+
+.KelolaKamar .card-container {
+  display: flex;
+  flex-wrap: wrap; /* Membuat baris baru jika tidak cukup ruang */
+  justify-content: space-evenly; /* Merapikan card secara horizontal */
+  padding: 20px;
+}
+.KelolaFasilitas {
+  background-color: black;
+}
+.KelolaFasilitas h3 {
+  color: goldenrod;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.KelolaFasilitas .btn-wrapper {
+  text-align: right; /* Mengatur tombol di sisi kanan */
+  padding: 10px 20px; /* Memberi jarak dari tepi halaman */
+}
+
+.KelolaFasilitas .btn-tambah {
+  background-color: white;
+  color: black;
+  padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+  text-decoration: none; /* Menghilangkan underline */
+  border-radius: 5px; /* Memberikan efek sudut membulat */
+  display: inline-block; /* Mencegah tombol memanjang */
+}
+
+.KelolaFasilitas .btn-tambah:hover {
+  background-color: whitesmoke; /* Warna hover */
+  color: black;
+}
+
+.KelolaFasilitas .btn-edit {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.KelolaFasilitas .btn-edit:hover {
+  background-color: grey; /* Warna saat hover */
+  color: white;
+}
+
+/* Tombol Hitam */
+.KelolaFasilitas .btn-delete {
+  margin-top: 10px;
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+
+.KelolaFasilitas .btn-delete:hover {
+  background-color: red; /* Warna saat hover */
+  color: white;
+}
+
+/* Menyusun konten secara tengah */
+.KelolaFasilitas .card-body {
+  text-align: center;
+}
+
+.KelolaFasilitas .card-title {
+  margin-bottom: 15px; /* Menambahkan jarak antara title dan tombol */
+  text-align: center;
+}
+.KelolaFasilitas .card {
+  box-shadow: 0 0 10px 5px goldenrod;
+  background-color: goldenrod;
+  color: black;
+  width: 20rem;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.KelolaFasilitas .card img {
+  width: 100%;
+  height: 200px; /* Tetapkan tinggi gambar */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0; /* Membulatkan hanya bagian atas */
+}
+
+.KelolaFasilitas .card-container {
+  display: flex;
+  flex-wrap: wrap; /* Membuat baris baru jika tidak cukup ruang */
+  justify-content: space-evenly; /* Merapikan card secara horizontal */
+  padding: 20px;
+}
+.DataPemesanan {
+  background-color: white;
+}
+.DataPemesanan h2 {
+  background-color: goldenrod;
+  color: black;
+  padding: 10px;
+}
+.DataPemesanan table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.DataPemesanan table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.DataPemesanan th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+html,
+body {
+  height: 100%; /* Pastikan tinggi halaman mencakup seluruh viewport */
+  margin: 0; /* Hilangkan margin bawaan */
+  display: flex;
+  flex-direction: column; /* Tata letak vertikal: header, konten, footer */
+}
+
+body {
+  flex: 1; /* Isi sisa ruang viewport dengan konten utama */
+  padding-top: 160px; /* Menambahkan ruang untuk header dan navbar */
+}
+
+.footer {
+  background-color: goldenrod;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Dorong footer ke bawah jika konten kurang tinggi */
+}
+
+div.halamanSelamatDatang {
+  background-image: url("gambar/hotel.jpg");
+  background-size: cover; /* Agar gambar selalu memenuhi elemen */
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+
+  color: white;
+  font-style: oblique;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Menggunakan min-height untuk responsivitas */
+  min-height: 100vh; /* Pastikan elemen selalu memenuhi tinggi layar */
+
+  position: relative;
+  z-index: 1;
+}
+
+div.halamanSelamatDatang div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.halamanSelamatDatang div h1 {
+  font-size: 50px;
+}
+div.halamanSelamatDatang div p {
+  font-size: 20px;
+}
+div.halamanSelamatDatang::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(194, 77, 4);
+  opacity: 0.3;
+  z-index: -1;
+}

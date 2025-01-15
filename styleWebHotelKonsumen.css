@@ -1,0 +1,417 @@
+/* Header Style */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Pemusatan vertikal */
+  height: 200px; /* Pastikan tinggi mencakup seluruh viewport */
+  background-color: black; /* Warna latar opsional */
+  margin: 0%;
+}
+/* Untuk konten di dalam header */
+.header .content {
+  display: flex;
+  flex-direction: column; /* Susun elemen secara vertikal */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+}
+
+/* Logo Responsif */
+.header .logo img {
+  max-height: 150px;
+  width: auto;
+}
+
+.navbar {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center; /* Tambahkan ini untuk men-center */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Agar menu menempati ruang yang sama */
+}
+
+.navbar .menu li {
+  margin: 15px 15px;
+}
+
+.navbar .menu li a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.navbar .menu li a:hover {
+  color: #000;
+}
+
+.navbar .cta {
+  border: 1px solid #555;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar .cta:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Aturan untuk dropdown level kedua */
+@media screen and (min-width: 769px) {
+  .dropdown-submenu.dropend > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.1em;
+  }
+}
+
+div.halamanSelamatDatang {
+  background-image: url("gambar/hotel.jpg");
+  background-size: cover; /* Agar gambar selalu memenuhi elemen */
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+
+  color: white;
+  font-style: oblique;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Menggunakan min-height untuk responsivitas */
+  min-height: 100vh; /* Pastikan elemen selalu memenuhi tinggi layar */
+
+  position: relative;
+  z-index: 1;
+}
+
+div.halamanSelamatDatang div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.halamanSelamatDatang div h1 {
+  font-size: 50px;
+}
+div.halamanSelamatDatang div p {
+  font-size: 20px;
+}
+div.halamanSelamatDatang::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(194, 77, 4);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.KelolaKamar h3 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.KelolaKamar .btn-wrapper {
+  text-align: right; /* Mengatur tombol di sisi kanan */
+  padding: 10px 20px; /* Memberi jarak dari tepi halaman */
+}
+
+.KelolaKamar .btn-tambah {
+  background-color: black;
+  color: white;
+  padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+  text-decoration: none; /* Menghilangkan underline */
+  border-radius: 5px; /* Memberikan efek sudut membulat */
+  display: inline-block; /* Mencegah tombol memanjang */
+}
+
+.KelolaKamar .btn-tambah:hover {
+  background-color: #333; /* Warna hover */
+  color: white;
+}
+
+.KelolaKamar .btn-edit {
+  margin-top: 10px;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+}
+
+.KelolaKamar .btn-edit:hover {
+  background-color: #ffcc00; /* Warna saat hover */
+  color: white;
+}
+
+/* Tombol Hitam */
+.KelolaKamar .btn-delete {
+  margin-top: 10px;
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+
+.KelolaKamar .btn-delete:hover {
+  background-color: red; /* Warna saat hover */
+  color: white;
+}
+
+/* Menyusun konten secara tengah */
+.KelolaKamar .card-body {
+  text-align: center;
+}
+
+.KelolaKamar .card-title {
+  margin-bottom: 15px; /* Menambahkan jarak antara title dan tombol */
+  text-align: center;
+}
+.KelolaKamar .card {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.KelolaKamar .card img {
+  width: 100%;
+  height: 200px; /* Tetapkan tinggi gambar */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0; /* Membulatkan hanya bagian atas */
+}
+
+.KelolaKamar .card-container {
+  display: flex;
+  flex-wrap: wrap; /* Membuat baris baru jika tidak cukup ruang */
+  justify-content: space-evenly; /* Merapikan card secara horizontal */
+  padding: 20px;
+}
+.KelolaFasilitas {
+  background-color: black;
+}
+.KelolaFasilitas h3 {
+  color: goldenrod;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.KelolaFasilitas .btn-wrapper {
+  text-align: right; /* Mengatur tombol di sisi kanan */
+  padding: 10px 20px; /* Memberi jarak dari tepi halaman */
+}
+
+.KelolaFasilitas .btn-tambah {
+  background-color: white;
+  color: black;
+  padding: 10px 20px; /* Menyesuaikan ukuran tombol */
+  text-decoration: none; /* Menghilangkan underline */
+  border-radius: 5px; /* Memberikan efek sudut membulat */
+  display: inline-block; /* Mencegah tombol memanjang */
+}
+
+.KelolaFasilitas .btn-tambah:hover {
+  background-color: whitesmoke; /* Warna hover */
+  color: black;
+}
+
+.KelolaFasilitas .btn-edit {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.KelolaFasilitas .btn-edit:hover {
+  background-color: grey; /* Warna saat hover */
+  color: white;
+}
+
+/* Tombol Hitam */
+.KelolaFasilitas .btn-delete {
+  margin-top: 10px;
+  background-color: darkred;
+  color: white;
+  border: none;
+}
+
+.KelolaFasilitas .btn-delete:hover {
+  background-color: red; /* Warna saat hover */
+  color: white;
+}
+
+/* Menyusun konten secara tengah */
+.KelolaFasilitas .card-body {
+  text-align: center;
+}
+
+.KelolaFasilitas .card-title {
+  margin-bottom: 15px; /* Menambahkan jarak antara title dan tombol */
+  text-align: center;
+}
+.KelolaFasilitas .card {
+  box-shadow: 0 0 10px 5px goldenrod;
+  background-color: goldenrod;
+  color: black;
+  width: 20rem;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.KelolaFasilitas .card img {
+  width: 100%;
+  height: 200px; /* Tetapkan tinggi gambar */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0; /* Membulatkan hanya bagian atas */
+}
+
+.KelolaFasilitas .card-container {
+  display: flex;
+  flex-wrap: wrap; /* Membuat baris baru jika tidak cukup ruang */
+  justify-content: space-evenly; /* Merapikan card secara horizontal */
+  padding: 20px;
+}
+
+.pemesananHotel {
+  font-family: "Arial", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.pemesananHotel h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: goldenrod;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  background-color: goldenrod;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+td label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error {
+  color: darkred;
+  font-size: 0.9em;
+  display: none;
+  margin-top: 5px;
+}
+
+button[name="save"],
+button[name="cancel"] {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[name="save"] {
+  background-color: #2c78fc;
+  color: white;
+}
+
+button[name="cancel"] {
+  background-color: orangered;
+  color: white;
+}
+
+button[name="save"]:hover {
+  background-color: #1a5bb8;
+}
+
+button[name="cancel"]:hover {
+  background-color: #dba807;
+}
+
+td[colspan="2"] {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.resume {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.resume h2 {
+  text-align: center;
+  color: goldenrod;
+}
+
+.resume p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.resume strong {
+  color: #2d3e50;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  table td {
+    padding: 8px;
+  }
+
+  button[name="save"],
+  button[name="cancel"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
